@@ -1,0 +1,10 @@
+# Ignore Visual Studio generated files
+.vs/
+*.ipch
+*.sdf
+*.suo
+*.user
+*.vc.db
+*.VC.db
+*.cache
+*.log
