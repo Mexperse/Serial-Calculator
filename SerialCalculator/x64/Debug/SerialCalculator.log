@@ -1,5 +1,0 @@
-﻿  SerialCalculator.cpp
-C:\Users\USER\source\repos\SerialCalculator\SerialCalculator.cpp(53,66): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-  SerialPort.cpp
-  Generating Code...
-  SerialCalculator.vcxproj -> C:\Users\USER\source\repos\SerialCalculator\x64\Debug\SerialCalculator.exe

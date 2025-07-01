@@ -24,9 +24,15 @@
               "RelativeDocumentMoniker": "SerialCalculator.cpp",
               "ToolTip": "C:\\Users\\USER\\source\\repos\\SerialCalculator\\SerialCalculator.cpp",
               "RelativeToolTip": "SerialCalculator.cpp",
+<<<<<<< HEAD
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-28T13:11:19.06Z",
+=======
               "ViewState": "AgIAABsAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-25T09:30:19.705Z",
+>>>>>>> 594219b347f66384dc872cbc5fe5a425a6b0ffa3
               "EditorCaption": ""
             }
           ]

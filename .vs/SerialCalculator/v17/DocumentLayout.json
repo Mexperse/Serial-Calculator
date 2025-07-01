@@ -1,12 +1,45 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\SerialCalculator\\",
+<<<<<<< HEAD
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A46DD07-37B6-4CCE-AB89-1FD413D24BB7}|SerialCalculator.vcxproj|C:\\Users\\USER\\source\\repos\\SerialCalculator\\SerialCalculator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A46DD07-37B6-4CCE-AB89-1FD413D24BB7}|SerialCalculator.vcxproj|solutionrelative:SerialCalculator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+=======
   "Documents": [],
+>>>>>>> 594219b347f66384dc872cbc5fe5a425a6b0ffa3
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< HEAD
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SerialCalculator.cpp",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\SerialCalculator\\SerialCalculator.cpp",
+              "RelativeDocumentMoniker": "SerialCalculator.cpp",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\SerialCalculator\\SerialCalculator.cpp",
+              "RelativeToolTip": "SerialCalculator.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-28T13:11:19.06Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+=======
       "DocumentGroups": []
+>>>>>>> 594219b347f66384dc872cbc5fe5a425a6b0ffa3
     }
   ]
 }
