@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Serial Calculator System Documentation
 
 ## Table of Contents
