@@ -274,7 +274,3 @@ Sleep(milliseconds)                    // Windows sleep function
 ```
 
 ---
-=======
-# Serial-Calculator
-A simple calculator that processes basic arithmetic on a microcontroller via a console app 
->>>>>>> 594219b347f66384dc872cbc5fe5a425a6b0ffa3
