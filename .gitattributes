@@ -1,3 +1,10 @@
 .ipch filter=lfs diff=lfs merge=lfs -text
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 SERIALPORT.ipch filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 594219b347f66384dc872cbc5fe5a425a6b0ffa3
+=======
+SERIALPORT.ipch filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 594219b347f66384dc872cbc5fe5a425a6b0ffa3
 *.ipch filter=lfs diff=lfs merge=lfs -text
