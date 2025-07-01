@@ -9,7 +9,7 @@
 5. [Arduino Firmware Documentation](#arduino-firmware-documentation)
 6. [Communication Protocol](#communication-protocol)
 7. [Troubleshooting](#troubleshooting)
-8. [API Reference](#api-reference)
+8. [Reference](#reference)
 
 ## Overview
 
