@@ -23,7 +23,7 @@ The system uses serial communication to send mathematical expressions from the P
 ### Console Application
 - Windows 10/11
 - Visual Studio 2019 or later
-- Available COM port (typically COM3)
+- Available COM port
 - SerialPort.hpp library
 
 ### Arduino
@@ -43,16 +43,13 @@ The system uses serial communication to send mathematical expressions from the P
 ### 2. Console Application Setup
 1. Create new C++ project in Visual Studio
 2. Add `SerialPort.hpp` to project directory
-3. Configure COM port in source code:
-   ```cpp
-   const char* port = "\\\\.\\COM3"; // Change to your port
-   ```
-4. Build and run the application
+3. Build and run the application
+4. Type the COM port after running the app
 
 ### 3. Hardware Connection
 - Connect Arduino to PC via USB cable
 - Note the assigned COM port in Device Manager
-- Update the port variable in console application
+- Update the port in console application
 
 ## Console Application Documentation
 
@@ -63,7 +60,7 @@ The system uses serial communication to send mathematical expressions from the P
 - Interactive command-line interface
 - Real-time communication with Arduino
 - Automatic result logging with timestamps
-- Graceful error handling and connection management
+- Error handling and connection management
 
 ### Usage
 
@@ -111,7 +108,7 @@ SerialCalculator.exe
 ## Arduino Firmware Documentation
 
 ### Features
-- Support for four basic arithmetic operations (+, -, *, /)
+- Support for seven arithmetic operations (+, -, *, /, ^, r, %)
 - Flexible input parsing (spaces optional)
 - Comprehensive error handling
 - Floating-point arithmetic with intelligent formatting
@@ -125,6 +122,9 @@ SerialCalculator.exe
 10 - 4
 7 * 8
 15 / 3
+2 ^ 3
+2 r 25
+200 % 3
 ```
 
 #### Without Spaces
@@ -133,6 +133,9 @@ SerialCalculator.exe
 10-4
 7*8
 15/3
+2^3
+2r25
+200%3
 ```
 
 #### Negative Numbers
@@ -170,9 +173,28 @@ switch (arithOperator) {
     case '-': result = num1 - num2; break;
     case '*': result = num1 * num2; break;
     case '/': 
-        if (num2 != 0) result = num1/num2;
-        else { /* Handle division by zero */ }
-        break;
+      if (num2 != 0) result = num1/num2;
+      else {
+        Serial.println("Error: Division by zero");
+        valid = false;
+        }
+      break;
+    case '^': 
+      if (num2 == (long)num2) result = round(pow(num1, num2));
+      else {
+        result = pow(num1, num2);
+      }
+      break;
+    case 'r': 
+      result = pow(num2, (1.0/num1)); 
+      if (fabs(result - round(result)) < 0.0001) {
+        result = round(result);
+      }
+      break;
+    case '%': result = (int)num1 % (int)num2; break;
+    default:
+      Serial.println("Error: Invalid operator"); //Handles invalid operators
+      valid = false;
 }
 ```
 
@@ -233,6 +255,10 @@ switch (arithOperator) {
   - Verify input format matches supported patterns
   - Check for extra spaces or characters
   - Understand floating-point precision limits
+
+#### Shows it has connected but not showing that next line, for example: "Coneected to Arduino on COM3"
+- **Cause**: Input parsing issues or precision limitations
+- **Solutions**: Go to device manager, check the Arduino Port (Unplug and plug back in if unsure) and close the app and restart. Then type in the appropriate port
 
 ### Debug Tips
 1. **Test Arduino Separately**: Use Arduino IDE Serial Monitor
